@@ -1,33 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
-            max-width: 400px;
-            margin: 0 auto;
-            padding: 20px;
+            max-width: 500px;
+            padding: 60px;
             background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
         }
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         .form-group label {
             display: block;
             font-weight: bold;
             margin-bottom: 5px;
+            color: #555;
         }
         .form-group input {
-            width: 100%;
             padding: 10px;
+            width: 90%;
             border: 1px solid #ccc;
-            border-radius: 3px;
+            border-radius: 5px;
         }
         .form-group button {
             width: 100%;
@@ -35,50 +52,33 @@
             background-color: #4CAF50;
             color: #fff;
             border: none;
-            border-radius: 3px;
+            border-radius: 5px;
             cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
         }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: #fff;
+        .form-group button:hover {
+            background-color: #45a049;
         }
-        .header-logo {
-            display: flex;
-            align-items: center;
+        .footer {
+            text-align: center;
+            margin-top: 20px;
         }
-        .header-logo img {
-            height: 30px;
-            margin-right: 10px;
-        }
-        .header-links {
-            display: flex;
-            align-items: center;
-        }
-        .header-links a {
-            color: #fff;
-            margin-right: 10px;
+        .footer a {
+            color: #4CAF50;
             text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer a:hover {
+            color: #45a049;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="header-logo">
-            <img src="logo.png" alt="Logo">
-            <h1>Company Name</h1>
-        </div>
-        <div class="header-links">
-            <a href="#">Contact Us</a>
-            <a href="#">About Us</a>
-            <a href="#">Register</a>
-        </div>
-    </div>
     <div class="container">
-        <h2>Login</h2>
+        <div class="header">
+            <h1>QTech</h1>
+        </div>
         <form>
             <div class="form-group">
                 <label for="username">Username:</label>
@@ -92,6 +92,11 @@
                 <button type="submit">Login</button>
             </div>
         </form>
+        <div class="footer">
+            <a href="#">Contact Us</a> |
+            <a href="#">About Us</a> |
+            <a href="#">Register</a>
+        </div>
     </div>
 </body>
 </html>
